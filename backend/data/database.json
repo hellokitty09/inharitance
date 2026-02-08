@@ -1,0 +1,17 @@
+{
+  "complaints": [
+    {
+      "id": "01e4e51b-60fb-4617-90e9-6f0e21a879f9",
+      "category": "corruption",
+      "party_name": "Test Party",
+      "description": "Test anonymous complaint",
+      "evidence": null,
+      "zkp_proof": null,
+      "region_hash": null,
+      "status": "pending",
+      "created_at": "2026-02-05T21:14:16.458Z",
+      "updated_at": "2026-02-05T21:14:16.458Z"
+    }
+  ],
+  "analytics_cache": {}
+}

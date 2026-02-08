@@ -1,0 +1,8 @@
+{
+  "sepolia": {
+    "PoliticalDonation": {
+      "address": "0xF7D524C3263D4f89b597c9e29eDC186fD376D4FD",
+      "startBlock": 10048421
+    }
+  }
+}

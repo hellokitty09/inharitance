@@ -1,0 +1,86 @@
+type AdminAdded @entity(immutable: true) {
+  id: Bytes!
+  adminAddress: Bytes! # address
+  name: String! # string
+  region: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type AdminRemoved @entity(immutable: true) {
+  id: Bytes!
+  adminAddress: Bytes! # address
+  name: String! # string
+  region: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type DonorAdded @entity(immutable: true) {
+  id: Bytes!
+  donoraddress: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type DonorRemoved @entity(immutable: true) {
+  id: Bytes!
+  donorAddress: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ElectionDeclared @entity(immutable: true) {
+  id: Bytes!
+  from: BigInt! # uint256
+  to: BigInt! # uint256
+  cap: BigInt! # uint256
+  region: String! # string
+  name: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type PartyAdded @entity(immutable: true) {
+  id: Bytes!
+  partyAddress: Bytes! # address
+  name: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type PartyRemoved @entity(immutable: true) {
+  id: Bytes!
+  partyAddress: Bytes! # address
+  name: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Withdrawal @entity(immutable: true) {
+  id: Bytes!
+  by: String! # string
+  amt: BigInt! # uint256
+  elecId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type donation @entity(immutable: true) {
+  id: Bytes!
+  from: String! # string
+  to: String! # string
+  time: BigInt! # uint256
+  amt: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
